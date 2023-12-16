@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./lógica.js" defer></script>
+    <link rel="stylesheet" href="./styles2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="container text-center border-primary" style="max-width: 720px">
+        <div class="row">
+
+            <div class="col-sm-6 border-end border-ligth" id="subcontainer1">
+                <img src="./imagen/Perfil.jpg" class="img-thumbnail image rounded-circle" alt="">
+                <h2 class="col text-center">Bienvenido(a), ¿Qué deseas hacer?</h2>
+                <p id="title_user"></p>
+
+                <div class="container-btn">
+                    <button id="btn-consultar" class="btn btn-primary w-50">Consultar saldo</button>
+                    <button id="btn-monto" class="btn btn-primary w-50">Ingresar monto</button>
+                    <button id="btn-retirar" class="btn btn-primary w-50">Retirar monto</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 border-start border-ligth" id="subcontainer2">
+                <h1 class="text-center text-ligth" id="caja">Cajero</h1>
+                <p id="message"></p>
+
+                <form id="form-add" class="content-center">
+                    <div class="input-group mb-3">
+                        <input type="number" id="input-add" placeholder="Ingresar monto">
+                        <button class="btn btn-warning" type="submit" id="btn-continuar">Continuar</button>
+                    </div>
+                </form>
+
+
+                <form id="form-out" class="mb-4">
+                    <div class="input-group mb-3">
+                        <input type="number" id="input-out" placeholder="Ingresar monto">
+                        <button class="btn btn-warning" type="submit">Retirar</button>
+                    </div>
+                </form>
+
+                <button id="btn-exit" class="btn btn-primary">Cerrar sesión</button>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
